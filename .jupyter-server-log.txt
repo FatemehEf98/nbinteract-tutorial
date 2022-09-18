@@ -1,0 +1,148 @@
+[I 08:49:27.031 NotebookApp] Writing notebook server cookie secret to /home/jovyan/.local/share/jupyter/runtime/notebook_cookie_secret
+[W 2022-09-18 08:49:27.640 LabApp] 'ip' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2022-09-18 08:49:27.640 LabApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2022-09-18 08:49:27.640 LabApp] 'base_url' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2022-09-18 08:49:27.640 LabApp] 'token' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2022-09-18 08:49:27.640 LabApp] 'trust_xheaders' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2022-09-18 08:49:27.640 LabApp] 'allow_origin' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2022-09-18 08:49:27.640 LabApp] 'allow_origin_pat' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2022-09-18 08:49:27.640 LabApp] 'extra_template_paths' was found in both NotebookApp and ServerApp. This is likely a recent change. This config will only be set in NotebookApp. Please check if you should also config these traits in ServerApp for your purpose.
+[W 2022-09-18 08:49:27.640 LabApp] 'jinja_template_vars' was found in both NotebookApp and ServerApp. This is likely a recent change. This config will only be set in NotebookApp. Please check if you should also config these traits in ServerApp for your purpose.
+[W 2022-09-18 08:49:27.640 LabApp] 'shutdown_no_activity_timeout' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2022-09-18 08:49:27.640 LabApp] 'tornado_settings' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2022-09-18 08:49:27.640 LabApp] 'tornado_settings' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2022-09-18 08:49:27.650 LabApp] JupyterLab extension loaded from /srv/conda/envs/notebook/lib/python3.7/site-packages/jupyterlab
+[I 2022-09-18 08:49:27.650 LabApp] JupyterLab application directory is /srv/conda/envs/notebook/share/jupyter/lab
+[I 08:49:27.656 NotebookApp] nteract extension loaded from /srv/conda/envs/notebook/lib/python3.7/site-packages/nteract_on_jupyter
+[I 08:49:27.657 NotebookApp] Will shut down after 600 seconds with no kernels or terminals.
+[I 08:49:27.658 NotebookApp] Serving notebooks from local directory: /home/jovyan
+[I 08:49:27.658 NotebookApp] Jupyter Notebook 6.4.10 is running at:
+[I 08:49:27.658 NotebookApp] http://jupyter-fatemehef98-2dnbinteract-2dtutorial-2dovdxdg41:8888/user/fatemehef98-nbinteract-tutorial-ovdxdg41/?token=...
+[I 08:49:27.658 NotebookApp]  or http://127.0.0.1:8888/user/fatemehef98-nbinteract-tutorial-ovdxdg41/?token=...
+[I 08:49:27.658 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[W 08:49:27.662 NotebookApp] No web browser found: could not locate runnable browser.
+[I 08:49:27.940 NotebookApp] 302 GET /user/fatemehef98-nbinteract-tutorial-ovdxdg41/ (10.2.2.15) 1.540000ms
+[I 08:49:28.581 NotebookApp] 302 GET /user/fatemehef98-nbinteract-tutorial-ovdxdg41/?token=-frdmMXWQ6eG93ParFk4Yw (131.188.6.13) 1.150000ms
+[I 08:49:28.728 NotebookApp] 301 GET /user/fatemehef98-nbinteract-tutorial-ovdxdg41/lab/?token=-frdmMXWQ6eG93ParFk4Yw (131.188.6.13) 2.560000ms
+[I 08:49:37.096 NotebookApp] 301 GET /user/fatemehef98-nbinteract-tutorial-ovdxdg41/static/favicons/favicon.ico (131.188.6.13) 0.790000ms
+[I 2022-09-18 08:49:42.730 LabApp] Build is up to date
+[I 08:52:20.543 NotebookApp] New terminal with automatic name: 1
+[I 08:55:43.296 NotebookApp] Creating new notebook in 
+[E 08:55:43.297 NotebookApp] Uncaught exception POST /user/fatemehef98-nbinteract-tutorial-ovdxdg41/api/contents?1663491343940 (131.188.6.13)
+    HTTPServerRequest(protocol='https', host='hub-binder.mybinder.ovh', method='POST', uri='/user/fatemehef98-nbinteract-tutorial-ovdxdg41/api/contents?1663491343940', version='HTTP/1.1', remote_ip='131.188.6.13')
+    Traceback (most recent call last):
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/tornado/web.py", line 1713, in _execute
+        result = await result
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/tornado/gen.py", line 776, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/notebook/services/contents/handlers.py", line 207, in post
+        yield self._new_untitled(path, type=type, ext=ext)
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/tornado/gen.py", line 769, in run
+        value = future.result()
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/tornado/gen.py", line 234, in wrapper
+        yielded = ctx_run(next, result)
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/notebook/services/contents/handlers.py", line 159, in _new_untitled
+        model = yield maybe_future(self.contents_manager.new_untitled(path=path, type=type, ext=ext))
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/notebook/services/contents/manager.py", line 397, in new_untitled
+        return self.new(model, path)
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/notebook/services/contents/manager.py", line 416, in new
+        model['content'] = new_notebook()
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/nbformat/v4/nbbase.py", line 172, in new_notebook
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/nbformat/v4/nbbase.py", line 40, in validate
+        output.data = data
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/nbformat/validator.py", line 300, in validate
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/nbformat/validator.py", line 348, in iter_validate
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/nbformat/validator.py", line 61, in get_validator
+        if version_minor is None:
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/nbformat/validator.py", line 100, in _get_schema_json
+        schema_json = json.load(f)
+    FileNotFoundError: [Errno 2] No such file or directory: '/srv/conda/envs/notebook/lib/python3.7/site-packages/nbformat/v4/nbformat.v4.5.schema.json'
+[W 08:55:43.301 NotebookApp] Unhandled error
+[E 08:55:43.302 NotebookApp] {
+      "Host": "hub-binder.mybinder.ovh",
+      "Accept": "*/*",
+      "Referer": "https://hub-binder.mybinder.ovh/user/fatemehef98-nbinteract-tutorial-ovdxdg41/lab",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36"
+    }
+[E 08:55:43.302 NotebookApp] 500 POST /user/fatemehef98-nbinteract-tutorial-ovdxdg41/api/contents?1663491343940 (131.188.6.13) 6.750000ms referer=https://hub-binder.mybinder.ovh/user/fatemehef98-nbinteract-tutorial-ovdxdg41/lab
+[I 08:56:40.411 NotebookApp] Creating new notebook in 
+[E 08:56:40.412 NotebookApp] Uncaught exception POST /user/fatemehef98-nbinteract-tutorial-ovdxdg41/api/contents?1663491401053 (131.188.6.13)
+    HTTPServerRequest(protocol='https', host='hub-binder.mybinder.ovh', method='POST', uri='/user/fatemehef98-nbinteract-tutorial-ovdxdg41/api/contents?1663491401053', version='HTTP/1.1', remote_ip='131.188.6.13')
+    Traceback (most recent call last):
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/tornado/web.py", line 1713, in _execute
+        result = await result
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/tornado/gen.py", line 776, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/notebook/services/contents/handlers.py", line 207, in post
+        yield self._new_untitled(path, type=type, ext=ext)
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/tornado/gen.py", line 769, in run
+        value = future.result()
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/tornado/gen.py", line 234, in wrapper
+        yielded = ctx_run(next, result)
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/notebook/services/contents/handlers.py", line 159, in _new_untitled
+        model = yield maybe_future(self.contents_manager.new_untitled(path=path, type=type, ext=ext))
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/notebook/services/contents/manager.py", line 397, in new_untitled
+        return self.new(model, path)
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/notebook/services/contents/manager.py", line 416, in new
+        model['content'] = new_notebook()
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/nbformat/v4/nbbase.py", line 172, in new_notebook
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/nbformat/v4/nbbase.py", line 40, in validate
+        output.data = data
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/nbformat/validator.py", line 300, in validate
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/nbformat/validator.py", line 348, in iter_validate
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/nbformat/validator.py", line 61, in get_validator
+        if version_minor is None:
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/nbformat/validator.py", line 100, in _get_schema_json
+        schema_json = json.load(f)
+    FileNotFoundError: [Errno 2] No such file or directory: '/srv/conda/envs/notebook/lib/python3.7/site-packages/nbformat/v4/nbformat.v4.5.schema.json'
+[W 08:56:40.414 NotebookApp] Unhandled error
+[E 08:56:40.415 NotebookApp] {
+      "Host": "hub-binder.mybinder.ovh",
+      "Accept": "*/*",
+      "Referer": "https://hub-binder.mybinder.ovh/user/fatemehef98-nbinteract-tutorial-ovdxdg41/lab",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36"
+    }
+[E 08:56:40.415 NotebookApp] 500 POST /user/fatemehef98-nbinteract-tutorial-ovdxdg41/api/contents?1663491401053 (131.188.6.13) 5.120000ms referer=https://hub-binder.mybinder.ovh/user/fatemehef98-nbinteract-tutorial-ovdxdg41/lab
+[I 08:56:54.613 NotebookApp] Creating new notebook in 
+[E 08:56:54.614 NotebookApp] Uncaught exception POST /user/fatemehef98-nbinteract-tutorial-ovdxdg41/api/contents?1663491415257 (131.188.6.13)
+    HTTPServerRequest(protocol='https', host='hub-binder.mybinder.ovh', method='POST', uri='/user/fatemehef98-nbinteract-tutorial-ovdxdg41/api/contents?1663491415257', version='HTTP/1.1', remote_ip='131.188.6.13')
+    Traceback (most recent call last):
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/tornado/web.py", line 1713, in _execute
+        result = await result
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/tornado/gen.py", line 776, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/notebook/services/contents/handlers.py", line 207, in post
+        yield self._new_untitled(path, type=type, ext=ext)
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/tornado/gen.py", line 769, in run
+        value = future.result()
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/tornado/gen.py", line 234, in wrapper
+        yielded = ctx_run(next, result)
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/notebook/services/contents/handlers.py", line 159, in _new_untitled
+        model = yield maybe_future(self.contents_manager.new_untitled(path=path, type=type, ext=ext))
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/notebook/services/contents/manager.py", line 397, in new_untitled
+        return self.new(model, path)
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/notebook/services/contents/manager.py", line 416, in new
+        model['content'] = new_notebook()
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/nbformat/v4/nbbase.py", line 172, in new_notebook
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/nbformat/v4/nbbase.py", line 40, in validate
+        output.data = data
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/nbformat/validator.py", line 300, in validate
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/nbformat/validator.py", line 348, in iter_validate
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/nbformat/validator.py", line 61, in get_validator
+        if version_minor is None:
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/nbformat/validator.py", line 100, in _get_schema_json
+        schema_json = json.load(f)
+    FileNotFoundError: [Errno 2] No such file or directory: '/srv/conda/envs/notebook/lib/python3.7/site-packages/nbformat/v4/nbformat.v4.5.schema.json'
+[W 08:56:54.615 NotebookApp] Unhandled error
+[E 08:56:54.616 NotebookApp] {
+      "Host": "hub-binder.mybinder.ovh",
+      "Accept": "*/*",
+      "Referer": "https://hub-binder.mybinder.ovh/user/fatemehef98-nbinteract-tutorial-ovdxdg41/lab",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36"
+    }
+[E 08:56:54.616 NotebookApp] 500 POST /user/fatemehef98-nbinteract-tutorial-ovdxdg41/api/contents?1663491415257 (131.188.6.13) 4.390000ms referer=https://hub-binder.mybinder.ovh/user/fatemehef98-nbinteract-tutorial-ovdxdg41/lab
+[I 08:57:25.452 NotebookApp] Uploading file to /widgets_html_ex.ipynb
+[W 08:57:28.298 NotebookApp] 400 GET /user/fatemehef98-nbinteract-tutorial-ovdxdg41/api/contents/widgets_html_ex.ipynb?type=notebook&content=1&1663491448944 (131.188.6.13): Unreadable Notebook: /home/jovyan/widgets_html_ex.ipynb FileNotFoundError(2, 'No such file or directory')
+[W 08:57:28.299 NotebookApp] Unreadable Notebook: /home/jovyan/widgets_html_ex.ipynb FileNotFoundError(2, 'No such file or directory')
+[W 08:57:28.300 NotebookApp] 400 GET /user/fatemehef98-nbinteract-tutorial-ovdxdg41/api/contents/widgets_html_ex.ipynb?type=notebook&content=1&1663491448944 (131.188.6.13) 4.090000ms referer=https://hub-binder.mybinder.ovh/user/fatemehef98-nbinteract-tutorial-ovdxdg41/lab
+[I 09:06:20.962 NotebookApp] Creating new file in 
