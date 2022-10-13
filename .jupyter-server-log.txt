@@ -297,3 +297,42 @@
 [I 12:24:05.082 NotebookApp] New terminal with automatic name: 1
 [I 12:24:06.374 NotebookApp] New terminal with automatic name: 2
 [I 12:24:25.734 NotebookApp] New terminal with automatic name: 3
+[I 13:23:13.035 NotebookApp] Creating new notebook in 
+[E 13:23:13.036 NotebookApp] Uncaught exception POST /user/fatemehef98-nbinteract-tutorial-qctkowrk/api/contents?1665667391305 (131.188.6.22)
+    HTTPServerRequest(protocol='https', host='hub.gke2.mybinder.org', method='POST', uri='/user/fatemehef98-nbinteract-tutorial-qctkowrk/api/contents?1665667391305', version='HTTP/1.1', remote_ip='131.188.6.22')
+    Traceback (most recent call last):
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/tornado/web.py", line 1713, in _execute
+        result = await result
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/tornado/gen.py", line 776, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/notebook/services/contents/handlers.py", line 207, in post
+        yield self._new_untitled(path, type=type, ext=ext)
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/tornado/gen.py", line 769, in run
+        value = future.result()
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/tornado/gen.py", line 234, in wrapper
+        yielded = ctx_run(next, result)
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/notebook/services/contents/handlers.py", line 159, in _new_untitled
+        model = yield maybe_future(self.contents_manager.new_untitled(path=path, type=type, ext=ext))
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/notebook/services/contents/manager.py", line 397, in new_untitled
+        return self.new(model, path)
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/notebook/services/contents/manager.py", line 416, in new
+        model['content'] = new_notebook()
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/nbformat/v4/nbbase.py", line 172, in new_notebook
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/nbformat/v4/nbbase.py", line 40, in validate
+        output.data = data
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/nbformat/validator.py", line 300, in validate
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/nbformat/validator.py", line 348, in iter_validate
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/nbformat/validator.py", line 61, in get_validator
+        if version_minor is None:
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/nbformat/validator.py", line 100, in _get_schema_json
+        schema_json = json.load(f)
+    FileNotFoundError: [Errno 2] No such file or directory: '/srv/conda/envs/notebook/lib/python3.7/site-packages/nbformat/v4/nbformat.v4.5.schema.json'
+[W 13:23:13.043 NotebookApp] Unhandled error
+[E 13:23:13.044 NotebookApp] {
+      "Host": "hub.gke2.mybinder.org",
+      "Accept": "*/*",
+      "Referer": "https://hub.gke2.mybinder.org/user/fatemehef98-nbinteract-tutorial-qctkowrk/lab",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36"
+    }
+[E 13:23:13.044 NotebookApp] 500 POST /user/fatemehef98-nbinteract-tutorial-qctkowrk/api/contents?1665667391305 (131.188.6.22) 10.210000ms referer=https://hub.gke2.mybinder.org/user/fatemehef98-nbinteract-tutorial-qctkowrk/lab
+[I 13:38:31.526 NotebookApp] Uploading file to /tutorial.html
